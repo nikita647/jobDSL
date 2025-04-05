@@ -16,7 +16,7 @@ folder('POC/CI-Checks/Applications/Declarative/React') {
     displayName('React')
 }
 
-pipelineJob('POC/CI-Checks/Applications/Declarative/React/Dependency scanning') {
+pipelineJob('POC/CI-Checks/Applications/Declarative/React/Dependency-Scanning') {
     description("Pipeline job for react declarative Dependency-scanning")
     definition {
         cpsScm {
@@ -52,7 +52,7 @@ pipelineJob('POC/CI-Checks/Applications/Declarative/React/DAST') {
     }
 }
 
-pipelineJob('POC/CI-Checks/Applications/Declarative/React/Code Compilation') {
+pipelineJob('POC/CI-Checks/Applications/Declarative/React/Code-Compilation') {
     description("Pipeline job for react Code Compilation")
     definition {
         cpsScm {
@@ -71,7 +71,7 @@ pipelineJob('POC/CI-Checks/Applications/Declarative/React/Code Compilation') {
 }
 
 
-pipelineJob('POC/CI-Checks/Applications/Declarative/React/Unit Testing') {
+pipelineJob('POC/CI-Checks/Applications/Declarative/React/Unit-Testing') {
     description("Pipeline job for react Unit Testing")
     definition {
         cpsScm {
@@ -89,7 +89,7 @@ pipelineJob('POC/CI-Checks/Applications/Declarative/React/Unit Testing') {
     }
 }
 
-pipelineJob('POC/CI-Checks/Applications/Declarative/React/Bug Analysis') {
+pipelineJob('POC/CI-Checks/Applications/Declarative/React/Bug-Analysis') {
     description("Pipeline job for react Bugs analysis")
     definition {
         cpsScm {
@@ -106,7 +106,7 @@ pipelineJob('POC/CI-Checks/Applications/Declarative/React/Bug Analysis') {
         }
     }
 }
-pipelineJob('POC/CI-Checks/Applications/Declarative/React/Static Code Analysis') {
+pipelineJob('POC/CI-Checks/Applications/Declarative/React/Static-Code-Analysis') {
     description("Pipeline job for react Static Code Analysis")
     definition {
         cpsScm {
