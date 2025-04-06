@@ -10,11 +10,11 @@ folder('POC/CI-Checks/Applications') {
 folder('POC/CI-Checks/Applications/Shared-Library') {
     displayName('Shared-Library')
 }
-folder('POC/CI-Checks/Applications/Shared-Library/Golang') {
+folder('POC/CI-Checks/Applications/Shared-Library/GoLang') {
     displayName('Golang')
 }
 
-pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/Dependency-Scanning') {
+pipelineJob('POC/CI-Checks/Applications/Shared-Library/GoLang/Dependency-Scanning') {
     description("Pipeline job for Golang dependency scanning")
     definition {
         cpsScm {
@@ -34,7 +34,7 @@ pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/Dependency-Scannin
 
 
 
-pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/DAST') {
+pipelineJob('POC/CI-Checks/Applications/Shared-Library/GoLang/DAST') {
     description("Pipeline job for Golang DAST scanning")
     definition {
         cpsScm {
@@ -52,7 +52,7 @@ pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/DAST') {
     }
 }
 
-pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/Code-Compilation') {
+pipelineJob('POC/CI-Checks/Applications/Shared-Library/GoLang/Code-Compilation') {
     description("Pipeline job for Golang code compilation")
     definition {
         cpsScm {
@@ -70,7 +70,7 @@ pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/Code-Compilation')
     }
 }
 
-pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/Unit-Testing') {
+pipelineJob('POC/CI-Checks/Applications/Shared-Library/GoLang/Unit-Testing') {
      description("Pipeline job for Golang unit testing")
     definition {
         cpsScm {
@@ -88,7 +88,7 @@ pipelineJob('POC/CI-Checks/Applications/Shared-Library/Golang/Unit-Testing') {
     }
 }
 
-pipelineJob('POC/CI-Checks/Applications/Shared-Library/React/Bugs-Analysis') {
+pipelineJob('POC/CI-Checks/Applications/Shared-Library/GoLang/Bugs-Analysis') {
     description("Pipeline job for Golang Bugs Scanning")
     definition {
         cpsScm {
@@ -106,7 +106,7 @@ pipelineJob('POC/CI-Checks/Applications/Shared-Library/React/Bugs-Analysis') {
     }
 }
 
-pipelineJob('POC/CI-Checks/Applications/Shared-Library/React/Static-Code-Analysis') {
+pipelineJob('POC/CI-Checks/Applications/Shared-Library/GoLang/Static-Code-Analysis') {
     description("Pipeline job for Golang Static code Analysis")
     definition {
         cpsScm {
